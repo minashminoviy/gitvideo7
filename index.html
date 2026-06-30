@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="styles/neurofunk.css"/>
 <link rel="stylesheet" href="styles/animbkv90.css">
 <link rel="stylesheet" href="styles/animbukv7.css">
+<link rel="stylesheet" href="styles/oknopar.css"/>
 <link rel="stylesheet" href="styles/particles.css"/>
 <link rel="stylesheet" href="styles/gitvideo7.css">
   <link rel="icon" type="Images/x-icon" href="styles/gaaicon.ico"/>
@@ -134,6 +135,8 @@
 <button class="btn btn-primary bg-transparent" onclick="mychfont()">Поменять шрифт</button>
 </p>
 
+<div class="container-fluid text-center"><div class="row"><div class="col-9">
+
 <div class="video-list">
 <span class="vid" title="Лицей - Осень Официальный клип 1996">
 	<video src="videodp/Litsey Osen.mp4" type="video/mp4" autoplay muted loop></video>
@@ -146,14 +149,6 @@
 <span class="vid" title="Группа Стрелки - Ты выбираешь сам 1999">
 	<video src="videodp/Strelki Ti vibiraesh sam.mp4" type="video/mp4" autoplay muted loop></video>
 	<p class="title hide">Группа Стрелки - Ты выбираешь сам 1999</p>
-</span>
-<span class="vid" title="Стрелки - Нелюбовь 2000">
-	<video src="videodp/Strelki Nelubov.mp4" type="video/mp4" autoplay muted loop></video>
-	<p class="title hide">Стрелки - Нелюбовь 2000</p>
-</span>
-<span class="vid" title="Стрелки - Мамочка 1997">
-	<video src="videodp/Strelki Mamochka.mp4" type="video/mp4" autoplay muted loop></video>
-	<p class="title hide">Стрелки - Мамочка 1997</p>
 </span>
 <span class="vid" title="Моральный кодекс - Я выбираю тебя 1995">
 	<video src="videodp/Moralniy kodeks Vibirau.mp4" type="video/mp4" autoplay muted loop></video>
@@ -177,6 +172,32 @@
 </span>
 </div>
 
+</div><div class="col-3">
+
+<div id="lockScreen" class="lock-overlay">
+<div style="font-family: 'TimesET85n';">Здесь видео не для всех</div>
+<form id="passwordForm">	
+	<label for="passwordInput">Пароль:</label>
+	<input type="password" id="passwordInput" placeholder="Пароль">
+	<button type="submit">Открыть</button>
+</form>
+</div>
+<div id="content" class="protected-content">
+<div class="video-list">
+<span class="vid" title="Стрелки - Нелюбовь 2000">
+	<video src="videodp/Strelki Nelubov.mp4" type="video/mp4" autoplay muted loop></video>
+	<p class="title hide">Стрелки - Нелюбовь 2000</p>
+</span>
+<span class="vid" title="Стрелки - Мамочка 1997">
+	<video src="videodp/Strelki Mamochka.mp4" type="video/mp4" autoplay muted loop></video>
+	<p class="title hide">Стрелки - Мамочка 1997</p>
+</span>
+</div>
+</div>
+<!-- Если нужно не просто выровнять текст, а центрировать сам блок с контентом (например, несколько строк или блок с 
+отступами), иногда эффективнее добавить к самому .row класс justify-content-center (это работает в связке с flexbox) -->
+</div></div></div>
+
 <div class="mx-auto" style="height: 7%;">Ещё сайты&nbsp;
 <a href="https://orion4log.github.io/vidinostr1/index.html" target="_blank">
 <button class="btn btn-warning bg-transparent">Видеоклипы 1</button></a>
@@ -192,6 +213,8 @@
 <button class="btn btn-warning bg-transparent">Видеоклипы 6</button></a>
 <a href="https://aviapassazh.github.io/gitvideo8/index.html" target="_blank">
 <button class="btn btn-warning bg-transparent">Видеоклипы 8</button></a>	
+<a href="https://aviapassazh.github.io/gitvideo9/index.html" target="_blank">
+<button class="btn btn-warning bg-transparent">Видеоклипы 9</button></a>	
 </div>
 
 </div>
@@ -362,6 +385,7 @@
 <script src="styles/proverka.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="styles/animbkv90.js"></script>
+<script src="styles/oknopar.js"></script>
 <script src="styles/gitvideo7.js"></script>
 
 </body>
